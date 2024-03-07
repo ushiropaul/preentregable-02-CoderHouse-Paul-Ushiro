@@ -243,7 +243,7 @@ font-weight: 900;
 .carrusel-item {
     object-fit: cover;
     overflow: hidden;
-    max-height: 220px;
+    max-height: 320px;
 }
 
 
@@ -251,7 +251,6 @@ font-weight: 900;
 
 
 /* SECTION GRID-ESPECIES */
-/* carnivoros */
 .grid-especies {
     width: 100%;
 }
@@ -266,6 +265,10 @@ font-weight: 900;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 2rem;
+    color: #f2f2f2;
+}
+.grid-container-cards .card{
+    margin-bottom: 1rem;
 }
 .grid-especies article .contenedor-de-descripcion {
     margin-left: 1rem;
@@ -305,6 +308,7 @@ font-weight: 900;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    overflow: auto;
     perspective: 1000px;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
@@ -312,6 +316,7 @@ font-weight: 900;
   .card__image {
     width: 100%;
     height: 100%;
+    max-height: 345px;
     object-fit: cover;
 }  
   .card:hover {
@@ -331,6 +336,7 @@ font-weight: 900;
     transform: rotateX(-90deg);
     transform-origin: bottom;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
   }
   
   .card:hover .card__content {
@@ -339,19 +345,17 @@ font-weight: 900;
   
   .card__title {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
     color: #333;
     font-weight: 700;
   }
   
   .card__description {
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 10px;
     color: #777;
     line-height: 1.4;
   }
-
-/* estilos de footer */
 
 
 /* ESTILOS TABLET --------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -373,7 +377,9 @@ font-weight: 900;
 .grid-especies {
     width: 85%;
 }
-
+.grid-container-cards .card{
+    margin-bottom: .3rem;
+}
 .grid-especies article .grid-container-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Distribución de las cartas */
@@ -410,7 +416,7 @@ font-weight: 900;
 .carrusel-item {
     object-fit: cover;
     overflow: hidden;
-    max-height: 600px;
+    max-height: 700px;
     border-radius: 2rem;
 }
 
