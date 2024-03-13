@@ -1,0 +1,71 @@
+
+@use './../utilities/extend';
+@use './../utilities/mixin';
+@use './../utilities/variables';
+
+
+
+/* ESTILOS MOBILE-FIRST --------------------------------------------------------------------------------------------------------------------------------------------------*/
+main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .ambiente{
+
+            /* carrusel */
+            .carrusel-ambiente {
+                display: flex;
+                width: 100%;
+                .carrusel-item {
+                    object-fit: cover;
+                    overflow: hidden;
+                    max-height: 320px;
+                }
+            }
+            .informacion-ambiente{
+                margin-right: 6rem;
+            }
+        }
+
+    /* SECTION GRID-ESPECIES */
+    .grid-especies {
+        width: 100%;
+        article {
+            .contenedor-de-descripcion {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                .descripcion {
+                    color: variables.$color-blanco;
+                }
+            }
+            border-radius: 1rem;
+            .grid-container-cards {
+                .card:hover .card__content {
+                    transform: rotateX(0deg);
+                    }
+                .card{
+                    @extend .estilos-de-cards;
+                }
+            }
+        }
+        .carnivoros {
+            background-color: variables.$color-verde-opaco ;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: .5rem;
+        }
+        
+        /* herviboros */
+        .herviboros {
+            background-color: variables.$color-azul;
+            margin-bottom: 2rem;
+            padding: .5rem;
+        }
+        /* flora */
+        .flora {
+            background-color: rgb(7, 87, 56);
+            padding: .5rem;
+        }
+    }
+} 
+
+

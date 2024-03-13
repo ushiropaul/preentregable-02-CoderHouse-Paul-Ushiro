@@ -1,0 +1,24 @@
+
+
+
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    }
+
+div h1 {
+    display: flex;
+    justify-content: center;
+}

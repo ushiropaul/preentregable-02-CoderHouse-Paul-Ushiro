@@ -1,0 +1,23 @@
+
+// ESTILOS GLOBALES, RESET Y UTILIDADES
+
+@use './utilities/reset';
+@use './utilities/global';
+@use './utilities/variables';
+@use './utilities/mixin';
+@use './utilities/extend';
+@use './utilities/animaciones';
+
+
+// ESTILOS DE COMPONENTES HEADER Y FOOTER
+// estilos del header
+@use './components/header';
+// estilos del footer
+@use './components/footer';
+
+// ESTILOS DEL MAIN
+@use './pages/main-index';
+@use './pages/main-pages.scss';
+
+// ESTILOS MEDIA QUERIES
+@use './utilities/media-queries';
